@@ -37,6 +37,11 @@ app.get("/hello", (req, res) => {
   res.send("hello");
 });
 
+// Health check route for Railway
+app.get("/", (req, res) => {
+  res.send("Backend is running!");
+});
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
