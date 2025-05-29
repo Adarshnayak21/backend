@@ -14,7 +14,7 @@ RUN npm install --production
 COPY . .
 
 # Expose port (Railway will use process.env.PORT)
-EXPOSE 3000
+EXPOSE 8080
 
 # Start the server
 CMD ["node", "src/server.js"]
