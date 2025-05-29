@@ -17,7 +17,10 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://frontend-two-mu-81.vercel.app"
+    ],
     credentials: true, // allow frontend to send cookies
   })
 );
