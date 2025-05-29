@@ -1,5 +1,4 @@
-# Railway deployment configuration
-# Docs: https://docs.railway.app/deploy/configure#railwayjson
+
 {
   "build": {
     "env": {
