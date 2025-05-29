@@ -29,6 +29,11 @@ app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/chat", chatRoutes);
 
+// Demo hello route for deployment check
+app.get("/hello", (req, res) => {
+  res.send("hello");
+});
+
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
